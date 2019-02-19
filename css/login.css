@@ -1,11 +1,108 @@
+@font-face {font-family: "Mac_YaHei";src: url("YaHei.ttf");format('embedded-opentype')}
+@font-face {font-family: "Mac_LinHui";src: url("LinHui.ttf");format('embedded-opentype')}
+.w1{width: 10%}.w2{width: 20%}.w3{width: 30%}.w4{width: 40%}.w5{width: 50%}.w6{width: 60%}.w7{width: 70%}
+* { -webkit-user-select: none; }
 body{
     padding: 0px;
     margin: 0px;
-    background-color:cadetblue;
+    background-image: url("../image/login_bg.jpg");
+    background-repeat: repeat-x;
   }
-  .login-panel{
-    width: 300px;
-    height:200px;
-    background-color: azure;
-    margin: 40px auto;
-  }
+.logo{
+    height:48px;
+    background-image: url("../image/logo.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 60%;
+    margin-top: 80px;
+    margin-bottom: 20px;
+}
+.slogan{
+    height: 38px;
+    background-image: url("../image/slogan.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 40px;
+}
+.login-panel{
+    text-align: center;
+}
+.login-panel div{
+    margin-bottom: 20px;
+}
+.txt-label{
+    font-family: "Mac YaHei";
+    font-size: 14px;
+    line-height: 36px;
+    color:#fff;
+    vertical-align: middle;
+    display: inline-block;
+    border-bottom: 1px solid #fff;
+
+}
+::-webkit-input-placeholder{color:#e9f5fe;font-size: 14px;}
+.input{
+    border-left:none;border-top:none;border-right:none;
+    border-bottom:1px solid #fff;
+    background: none;
+    font-size: 14px;
+    height:36px;
+    color:#fff;
+    line-height: 36px;
+    outline: none;
+    vertical-align: middle;
+}
+.rem-pass{
+    color:#fff;
+    font-size: 12px;
+    font-family: "Mac_YaHei";
+    text-align: left;
+    padding-left: 50px;
+}
+.rem-pass input{
+    outline: none;
+    border:1px solid #fff;
+}
+.login-panel div button{
+    line-height: 28px;
+    padding: 5px;
+    font-size: 16px;
+    color:#fff;
+    background: none;
+    border:1px solid #fff;
+    border-radius: 5px;
+    outline: none;
+}
+.login-panel div button:hover{
+    background-color: #04a6f2;
+    cursor: pointer;
+}
+.login-panel div button:active{
+    background-color: #04a6f2;
+    cursor: pointer;
+}
+.login-panel div.a-links{
+    padding-left: 50px;
+    text-align: left;
+    padding-right: 50px;
+}
+.fgt-btn,.reg-btn{
+    display: inline-block;
+    text-decoration: none;
+    font-size: 12px;
+    font-family: "Mac_YaHei";
+    color:#fff
+}
+.reg-btn{
+    float: right;
+}
+.copyright{
+    position: fixed;
+    bottom: 20px;
+    text-align: center;
+    margin-bottom: 0px;
+    color:#fff;
+    font-size: 10px;
+    width: 100%;
+    font-family: "Mac_YaHei";
+}
